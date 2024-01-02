@@ -2,6 +2,10 @@
 
 Practice speaking chinese with easy word lookup!
 
+<p align="center">
+  <img src="./propaganda/demo.webp" width="600px" />
+</p>
+
 # Run locally
 
 Install dependencies and run:
