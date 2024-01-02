@@ -1,0 +1,43 @@
+/* written by chatgpt */
+.clickable-word {
+  text-decoration: underline dotted;
+  margin-right: 0.2em;
+}
+
+/* Written by ChatGPT */
+.clickable-word:hover {
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-decoration-color: #00bfff;
+  text-shadow: 0 0 10px #00bfff;
+}
+
+/* written by human */
+.message > .content {
+  padding: 1em;
+}
+
+/* Written by ChatGPT */
+.info-box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  padding: 16px;
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.info-box .word {
+  font-weight: bold;
+}
+
+.info-box .context {
+  font-style: italic;
+}
+
+.info-box .explanation {
+  margin-top: 8px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="bulma.css"/>
+    <link rel="stylesheet" href="main.css"/>
+
+    <script src="main.js" defer></script>
+
+
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half is-offset-one-quarter">
+            <div class="box">
+              <div id="chat-history" class="content">
+              </div>
+              <hr>
+
+              <div class="field has-addons">
+                <div class="control is-expanded">
+                  <textarea id="chat-input" class="input chinese" type="text" placeholder="">
+                  </textarea>
+
+                </div>
+                <div class="control">
+                  <button id="send-button" class="button is-info" onclick="onClickSend(document.getElementById('chat-input').value)">Send</button>
+                </div>
+              </div>
+
+              <div id="word-definition">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- chinese IME -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jQuery.chineseIME.js" defer></script>
+    <script type="text/javascript" src="caret.js" defer></script>
+    <link rel="stylesheet" href="ime.css"/>
+    <script type="text/javascript" defer>
+      $(document).ready(function(){
+          $("textarea.chinese").chineseInput({
+              debug: false,
+              input: {
+                  initial: 'simplified',
+                  allowChange: false
+              },
+              allowHide: false,
+              active: true
+          });
+      });
+    </script>
+  </body>
+</html>
